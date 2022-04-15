@@ -1,10 +1,9 @@
-
 public class Calculator {
     public Formula newFormula() {
         return new Formula();
     }
 
-    public static enum Operation {
+    public enum Operation {
         SUM, SUB, MULT, DIV, POW;
     }
 

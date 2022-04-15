@@ -7,19 +7,16 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int sum(int arg0, int arg1) {
-        //считаем через target
         double res = target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
                 .calculate(Calculator.Operation.SUM)
                 .result();
         return (int) res;
-
     }
 
     @Override
     public int mult(int arg0, int arg1) {
-        //считаем через target
         double res = target.newFormula()
                 .addOperand(arg0)
                 .addOperand(arg1)
@@ -30,7 +27,6 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int pow(int a, int b) {
-        //считаем через target
         double res = target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
@@ -41,7 +37,6 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int div(int a, int b) {
-        //считаем через target
         double res = target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
@@ -52,7 +47,6 @@ public class IntsCalculator implements Ints {
 
     @Override
     public int sub(int a, int b) {
-        //считаем через target
         double res = target.newFormula()
                 .addOperand(a)
                 .addOperand(b)
